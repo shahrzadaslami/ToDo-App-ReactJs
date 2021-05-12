@@ -30,3 +30,25 @@ form{
   margin-left: 5px;
   margin-right: 5px;
 }
+.toDO{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.todo-item{
+  list-style: none;
+}
+.trash-btn{
+  border-radius: 12px;
+  border: none;
+  background: #4D42E0;
+  margin-left: 10px;
+}
+.check{
+  border-radius: 12px;
+  border: none;
+  background: #EEE600;
+  margin-left: 10px;
+}
