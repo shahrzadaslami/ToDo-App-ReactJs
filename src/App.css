@@ -1,5 +1,5 @@
 body{
-  background: #42A0E0;
+  background: #e09b42;
 }
 header h1{
   text-align: center;
@@ -12,17 +12,24 @@ form{
   align-items: center;
   justify-content: center;
 }
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content form{
+  border-radius: 10px;
+  background: linear-gradient(185deg, rgba(205,180,219,1) 6%, rgba(255,200,221,1) 40%, rgba(162,210,255,1) 100%);
+}
 .list-input{
-  border: 1px solid rgba(0, 0, 0, 0.514);
-  border-radius: 12px;
-  height: 25px;
   outline: none;
 }
 .list-input:focus{
   outline: none;
 }
 .add-btn{
-  background: #42E0B6;
+  background: #4274e0;
   font-size: 12px;
   border-radius: 12px;
   border: none;

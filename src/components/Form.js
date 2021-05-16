@@ -14,18 +14,22 @@ const Form = ({setInputText, todos,setToDo, inputText}) => {
         setInputText("");
     };
     return(
-        <form>
-            <input value={inputText} onChange={inputTextHandler} type="text" className="list-input" />
-            <button onClick= {submitToDoHandler} className="add-btn" type="submit">add</button>
-            <div className="select">
-                <select name="todos" className="filters">
-                    <option value="all">All</option>
-                    <option value="To-do">To Do</option>
-                    <option value="doing">Doing</option>
-                    <option value="Done">Done</option>
-                </select>
-            </div>
-        </form>
+        <div className="content container col-12">
+            <form className="col-lg-5 col-12">
+                <input value={inputText} onChange={inputTextHandler} type="text" className="list-input form-control m-2" />
+                <button onClick= {submitToDoHandler} className="btn btn-success m-2" type="submit">add</button>
+                
+                <div className="select m-2">
+                    <select name="todos" className="filters form-select">
+                        <option value="all">All</option>
+                        <option value="To-do">To Do</option>
+                        <option value="doing">Doing</option>
+                        <option value="Done">Done</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+       
     );
 }
 
