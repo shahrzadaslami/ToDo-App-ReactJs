@@ -59,3 +59,52 @@ form{
   background: #EEE600;
   margin-left: 10px;
 }
+.header{
+  position: relative;
+  background:  linear-gradient(185deg, rgba(205,180,219,1) 6%, rgba(255,200,221,1) 40%, rgba(162,210,255,1) 100%);
+}
+
+
+
+@media only screen and (max-width: 600px){
+  .header{
+    position: relative;
+    height: 70vh;
+    background:  linear-gradient(185deg, rgba(205,180,219,1) 6%, rgba(255,200,221,1) 40%, rgba(162,210,255,1) 100%);
+  }
+  .header .logo{
+    position: absolute;
+    bottom: 2%;
+    left: -2%;
+    width: 500px;
+    height: 300px;
+  }
+  .text{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #6d6875;
+  }
+  .boxes{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    padding-left: 20px;
+  }
+  .box img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    background: #e2eafc;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1);
+  }
+  .box:hover img{
+    background: #abc4ff;
+    transform: scale(1.1);
+  }
+
+}
