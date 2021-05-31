@@ -1,4 +1,5 @@
 import React from 'react';
+
 const Header = ({}) =>{
     return(
         <div className="header">
@@ -28,7 +29,7 @@ const Header = ({}) =>{
             </nav>   
             <img className="logo" src="/logo.png" alt="" />
             <div className="text pt-2">
-                <h2>Get it right this time</h2>
+                <h1>Get it right this time</h1>
             </div>
             <div className="boxes">
                 <a href="">

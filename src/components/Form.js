@@ -14,7 +14,8 @@ const Form = ({setInputText, todos,setToDo, inputText}) => {
         setInputText("");
     };
     return(
-        <div className="content container col-12">
+        <div className="content todo-input-box container col-12">
+            <h3>Create Your Daily ToDo List</h3>
             <form className="col-lg-5 col-12">
                 <input value={inputText} onChange={inputTextHandler} type="text" className="list-input form-control m-2" />
                 <button onClick= {submitToDoHandler} className="btn btn-success m-2" type="submit">add</button>

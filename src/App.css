@@ -1,5 +1,16 @@
+html{
+  overflow-x: hidden;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+
 body{
-  background: #e09b42;
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
 }
 header h1{
   text-align: center;
@@ -41,18 +52,14 @@ form{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 10px;
+  margin: 0;
 }
 .todo-item{
   list-style: none;
 }
-.trash-btn{
-  border-radius: 12px;
-  border: none;
-  background: #4D42E0;
-  margin-left: 10px;
-}
+
 .check{
   border-radius: 12px;
   border: none;
@@ -65,21 +72,21 @@ form{
 }
 
 
-
 @media only screen and (max-width: 600px){
   .header{
     position: relative;
-    height: 70vh;
+    height: 60vh;
     background:  linear-gradient(185deg, rgba(205,180,219,1) 6%, rgba(255,200,221,1) 40%, rgba(162,210,255,1) 100%);
   }
   .header .logo{
     position: absolute;
-    bottom: 2%;
-    left: -2%;
-    width: 500px;
+    bottom: 0%;
+    left: 0;
+    width: 400px;
     height: 300px;
   }
   .text{
+    font-family: "CLARENDON";
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -90,7 +97,8 @@ form{
     flex-direction: column !important;
     align-items: flex-start;
     justify-content: center;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     padding-left: 20px;
   }
   .box img{
@@ -101,10 +109,52 @@ form{
     border-radius: 20px;
     transition: all 0.4s ease-in-out;
     transform: scale(1);
+    box-shadow: -2px -1px 21px -5px rgba(45,46,49,1);
+    -webkit-box-shadow: -2px -1px 21px -5px rgba(45,46,49,1);
+    -moz-box-shadow: -2px -1px 21px -5px rgba(45,46,49,1);
   }
   .box:hover img{
     background: #abc4ff;
     transform: scale(1.1);
   }
+  .todo-input-box{
+    background: #f1f1ee;
+    border-radius: 20px;
+    border-top: 5px solid #4274e0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .todo-input-box h3{
+   text-align: center;
+   text-transform: uppercase;
+   color: #6d6875;
+   font-weight: bold;
+  }
+ .toDO{
+  background: #abc4ff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100% !important;
+  text-align: left !important;
+  border-radius: 12px;
+  border-left: 4px solid #4D42E0;
+  margin-top: 5px;
+  }
+.todo-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+}
 
+  .toDO .trash-btn{
+    background: #EEE600;
+    border-radius: 8px;
+    border: none;
+    padding: 3px;
+  }
 }
