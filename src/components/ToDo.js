@@ -8,8 +8,10 @@ const ToDo = ({text,todo , setToDo, todos}) =>{
     return(
         <div className="toDO">
             <li className="todo-item">{text}</li>
-            <button onClick={DeleteHandler} className="trash-btn">Delete</button>
-            <button  className="check">check</button>
+                <div className="btn-box">
+                <button onClick={DeleteHandler} className="trash-btn"><i class="fas fa-trash-alt"></i></button>
+                <button  className="check-btn"><i className="fas fa-check"></i></button>
+                </div>
         </div>
     );
 }

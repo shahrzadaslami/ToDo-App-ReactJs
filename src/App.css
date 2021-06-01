@@ -7,6 +7,9 @@ html{
   margin:0;
 }
 
+nav, .collapse{
+  z-index: 10000 !important;
+}
 body{
   box-sizing: border-box;
   padding: 0;
@@ -75,7 +78,7 @@ form{
 @media only screen and (max-width: 600px){
   .header{
     position: relative;
-    height: 60vh;
+    height: 70vh;
     background:  linear-gradient(185deg, rgba(205,180,219,1) 6%, rgba(255,200,221,1) 40%, rgba(162,210,255,1) 100%);
   }
   .header .logo{
@@ -136,12 +139,14 @@ form{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100% !important;
   text-align: left !important;
   border-radius: 12px;
   border-left: 4px solid #4D42E0;
   margin-top: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
   }
 .todo-list{
   display: flex;
@@ -152,9 +157,27 @@ form{
 }
 
   .toDO .trash-btn{
-    background: #EEE600;
+    background: transparent;
     border-radius: 8px;
     border: none;
     padding: 3px;
+    color: #03045e;
+    transition: all 0.2s ease-in-out;
+  }
+  .toDO .trash-btn:hover{
+    color: tomato;
+  }
+  .toDO .check-btn{
+    background: transparent;
+    border-radius: 8px;
+    border: none;
+    padding: 3px;
+    margin-left: 10px;
+    color: #2a9d8f;
+    transition: all 0.2s ease-in-out;
+
+  }
+  .toDO .check-btn:hover{
+    color: #e63946;
   }
 }
